@@ -98,7 +98,8 @@ def generate_network_map(ip_range):
     unique_id = 2
 
     # Adicionando o Gateway (roteador) ao mapa
-    ap = create_device(str(unique_id), default_gateway, "00:11:22:33:44:55", "Roteador", "Desconhecido", 100, 100, "Router")
+    ap =
+    ap = create_device(str(unique_id), default_gateway, ap{'mac'},ap{'fabricante'},ap{'os'}, 100, 100, "Router")
     root.append(ap)
     ap_id = str(unique_id)  # Guardar o ID do roteador
     unique_id += 1
