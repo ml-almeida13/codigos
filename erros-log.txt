@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/root/redefisica/codigos/acesso_cisco.py", line 85, in <module>
+    cisco_ips = scan_network(network_to_scan)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/redefisica/codigos/acesso_cisco.py", line 17, in scan_network
+    if 'cisco' in scanner[host]['osmatch'][0].lower():  # Adapte conforme necessário
+                  ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'osmatch'
+(redefisica) root@debian12:~/redefisica/codigos# 
