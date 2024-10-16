@@ -9,13 +9,17 @@ def scan_network(network):
     :return: Lista de IPs de dispositivos Cisco.
     """
     scanner = nmap.PortScanner()
-    scanner.scan(hosts=network, arguments='-p 22,23')  # Portas comuns para SSH e Telnet
+    scanner.scan(hosts=network, arguments='-p 22,23 -O')  # Adicionado '-O' para detecção de sistema operacional
 
     cisco_ips = []
     for host in scanner.all_hosts():
-        # Verifica se o dispositivo é Cisco
-        if 'cisco' in scanner[host]['osmatch'][0].lower():  # Adapte conforme necessário
-            cisco_ips.append(host)
+        # Verifica se o campo 'osmatch' existe e tem informações
+        if 'osmatch' in scanner[host] and len(scanner[host]['osmatch']) > 0:
+            # Verifica se o nome do sistema operacional inclui 'cisco'
+            if 'name' in scanner[host]['osmatch'][0] and 'cisco' in scanner[host]['osmatch'][0]['name'].lower():
+                cisco_ips.append(host)
+        else:
+            print(f"Não foi possível identificar o sistema operacional para o host {host}")
 
     return cisco_ips
 
