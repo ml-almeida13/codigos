@@ -18,3 +18,86 @@ Traceback (most recent call last):
     if 'cisco' in scanner[host]['osmatch'][0].lower():  # Adapte conforme necessário
                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'dict' object has no attribute 'lower'
+
+
+
+(redefisica) root@debian12:~/redefisica/codigos# python3 acesso_cisco.py 
+Não foi possível identificar o sistema operacional para o host 10.52.100.143
+Não foi possível identificar o sistema operacional para o host 10.52.100.144
+Não foi possível identificar o sistema operacional para o host 10.52.100.150
+Não foi possível identificar o sistema operacional para o host 10.52.100.151
+Não foi possível identificar o sistema operacional para o host 10.52.100.152
+Não foi possível identificar o sistema operacional para o host 10.52.100.154
+Não foi possível identificar o sistema operacional para o host 10.52.100.156
+Não foi possível identificar o sistema operacional para o host 10.52.100.157
+Não foi possível identificar o sistema operacional para o host 10.52.100.19
+Não foi possível identificar o sistema operacional para o host 10.52.100.2
+Não foi possível identificar o sistema operacional para o host 10.52.100.26
+Não foi possível identificar o sistema operacional para o host 10.52.100.4
+Não foi possível identificar o sistema operacional para o host 10.52.100.41
+Não foi possível identificar o sistema operacional para o host 10.52.100.43
+Não foi possível identificar o sistema operacional para o host 10.52.100.78
+Timeout ao conectar via SSH com admciscogapgl:Cisc0g@pgl. Tentando Telnet...
+Traceback (most recent call last):
+  File "/root/redefisica/lib/python3.11/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/root/redefisica/lib/python3.11/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 10.52.100.14
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/redefisica/codigos/acesso_cisco.py", line 56, in access_cisco_switch
+    connection = ConnectHandler(**ssh_device)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/redefisica/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/redefisica/lib/python3.11/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/root/redefisica/lib/python3.11/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/root/redefisica/lib/python3.11/site-packages/netmiko/base_connection.py", line 1161, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.52.100.14:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/redefisica/codigos/acesso_cisco.py", line 93, in <module>
+    result = access_cisco_switch(ip_switch, users, passwords)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/redefisica/codigos/acesso_cisco.py", line 69, in access_cisco_switch
+    connection = ConnectHandler(**telnet_device)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/redefisica/lib/python3.11/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/redefisica/lib/python3.11/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/root/redefisica/lib/python3.11/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/root/redefisica/lib/python3.11/site-packages/netmiko/base_connection.py", line 1122, in establish_connection
+    self.remote_conn = telnetlib.Telnet(  # type: ignore
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/redefisica/lib/python3.11/site-packages/netmiko/_telnetlib/telnetlib.py", line 222, in __init__
+    self.open(host, port, timeout)
+  File "/root/redefisica/lib/python3.11/site-packages/netmiko/_telnetlib/telnetlib.py", line 239, in open
+    self.sock = socket.create_connection((host, port), timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+(redefisica) root@debian12:~/redefisica/codigos# 
