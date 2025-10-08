@@ -405,7 +405,7 @@
         <mxCell id="H9s90QsvXZjLFw1X-1CI-10" value="&lt;div&gt;JUSTIÇA&lt;/div&gt;&lt;div&gt;3COM&lt;/div&gt;" style="shape=mxgraph.cisco.switches.workgroup_switch;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;labelBackgroundColor=default;" parent="1" vertex="1">
           <mxGeometry x="-535" y="1241" width="101" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="AqiUreVxdIsWitNPVCDm-1" value="SEREP&lt;div&gt;10.176.43.201&lt;/div&gt;&lt;div&gt;INTELBRAS&lt;/div&gt;" style="shape=mxgraph.cisco.switches.workgroup_switch;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;labelBackgroundColor=default;" vertex="1" parent="1">
+        <mxCell id="AqiUreVxdIsWitNPVCDm-1" value="SEREP&lt;div&gt;10.176.43.201&lt;/div&gt;&lt;div&gt;3COM&lt;/div&gt;" style="shape=mxgraph.cisco.switches.workgroup_switch;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;labelBackgroundColor=default;" vertex="1" parent="1">
           <mxGeometry x="-228" y="-578" width="101" height="50" as="geometry" />
         </mxCell>
       </root>
