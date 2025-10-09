@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.5">
   <diagram name="Página-1" id="2rpGbD3d713My13XPhMC">
-    <mxGraphModel dx="1792" dy="1302" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2403" dy="1611" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -439,7 +439,7 @@
         <mxCell id="49Kbj5rQnWty8BVOd-Mo-6" value="&lt;div&gt;ACS COMANDO&lt;/div&gt;&lt;div&gt;10.176.43.235&lt;/div&gt;&lt;div&gt;VLAN 1&lt;/div&gt;&lt;div&gt;3COM 2924&lt;/div&gt;" style="shape=mxgraph.cisco.switches.workgroup_switch;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;labelBackgroundColor=default;" vertex="1" parent="1">
           <mxGeometry x="-320" y="853" width="101" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="49Kbj5rQnWty8BVOd-Mo-7" value="&lt;div&gt;GERAIS&lt;/div&gt;&lt;div&gt;10.176.43.226&lt;/div&gt;&lt;div&gt;PLANET WGSW-50040&lt;/div&gt;" style="shape=mxgraph.cisco.switches.workgroup_switch;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;labelBackgroundColor=default;" vertex="1" parent="1">
+        <mxCell id="49Kbj5rQnWty8BVOd-Mo-7" value="&lt;div&gt;GERAIS&lt;/div&gt;&lt;div&gt;10.176.43.226&lt;/div&gt;&lt;div&gt;PLANET WGSW-50040&lt;/div&gt;" style="shape=mxgraph.cisco.switches.workgroup_switch;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;labelBackgroundColor=default;" vertex="1" parent="1">
           <mxGeometry x="-598" y="-59" width="101" height="50" as="geometry" />
         </mxCell>
         <mxCell id="49Kbj5rQnWty8BVOd-Mo-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.98;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="S97krkcanKNOVeEmOC4i-1" target="49Kbj5rQnWty8BVOd-Mo-7">
